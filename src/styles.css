@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  color: #7ea1ff;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+h1.main-title {
+  font-size: 4rem;
+  font-family: "Passion One", sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #5bbcff;
+  color: #fffab7;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  display: block;
+  padding: 2rem 4rem;
+  background-color: #ffd1e3;
+  color: #7ea1ff;
+  font-family: "Passion One", sans-serif;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  font-size: 2rem;
+  background-color: #fffab7;
+  color: #7ea1ff;
+}
+
+.form select,
+.form input,
+.form button {
+  font-size: inherit;
+  background-color: #7ea1ff;
+  color: #fffab7;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.form input::placeholder {
+  color: #fff;
+}
+
+.packing-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.goods-list {
+  list-style: none;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.sort-group {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+
+.sort-group select,
+.sort-group button {
+  font-size: inherit;
+  background-color: #fffab7;
+  color: #7ea1ff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.item .selected {
+  text-decoration: line-through;
+}
+
+.item button {
+  border: none;
+  background: none;
+}
+
+.item input[type="checkbox"] {
+  accent-color: #fffab7;
+}
+
+.stats {
+  padding: 2rem 4rem;
+  background-color: #7ea1ff;
+  color: #fff;
+  margin-top: auto;
+}
+
+.stats-text {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+}
